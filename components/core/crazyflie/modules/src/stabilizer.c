@@ -304,7 +304,7 @@ static void stabilizerTask(void* param)
       checkEmergencyStopTimeout();
 
       checkStops = systemIsArmed();
-      if (emergencyStop || (systemIsArmed() == false)) {
+      if ((systemIsArmed() == false)) {
         powerStop();
       } else {
         powerDistribution(&control);

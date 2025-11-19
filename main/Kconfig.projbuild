@@ -269,11 +269,11 @@ menu "ESPDrone Config"
 
         config LED_PIN_GREEN
             int "LED_PIN_GREEN GPIO number"
-            range 0 34 if TARGET_ESPLANE_V1
+            range 0 48 if TARGET_ESPLANE_V1
             default 5 if TARGET_ESPLANE_V1
-            range 0 43 if TARGET_ESPLANE_V2_S2
+            range 0 48 if TARGET_ESPLANE_V2_S2
             default 9 if TARGET_ESPLANE_V2_S2
-            range 0 43 if TARGET_ESP32_S2_DRONE_V1_2
+            range 0 48 if TARGET_ESP32_S2_DRONE_V1_2
             default 9 if TARGET_ESP32_S2_DRONE_V1_2
             help
                 GPIO number (IOxx) LED_PIN_GREEN
