@@ -39,7 +39,9 @@
 #include "debug_cf.h"
 
 #define MIN_THRUST  1000
-#define MAX_THRUST  60000
+#define MAX_THRUST  65535
+
+
 
 /**
  * CRTP commander rpyt packet format

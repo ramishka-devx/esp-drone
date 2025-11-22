@@ -29,7 +29,8 @@
 
 // Thrust command (in motor units)
 #define MIN_THRUST  0
-#define MAX_THRUST  60000
+#define MAX_THRUST  65535
+
 
 // Cutoff frequency used in the filtering 
 #define POSITION_INDI_FILT_CUTOFF 8.0f

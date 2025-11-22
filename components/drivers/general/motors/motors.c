@@ -190,7 +190,7 @@ void motorsSetRatio(uint32_t id, uint16_t ithrust)
 #ifdef ENABLE_THRUST_BAT_COMPENSATED
 
         if (motorMap[id]->drvType == BRUSHED) {
-            float thrust = ((float)ithrust / 65536.0f) * 100; //根据实际重量修改
+            float thrust = ((float)ithrust / 65536.0f) * 62.0f; //根据实际重量修改
             float volts = -0.0006239f * thrust * thrust + 0.088f * thrust;
             float supply_voltage = pmGetBatteryVoltage();
             float percentage = volts / supply_voltage;
